@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+  
+  <LinearLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:orientation="vertical" >
+      <TextView 
+          android:id="@+id/mm"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="IFOX成员信息列表"
+          android:gravity="center_horizontal"
+          android:textSize="30dip"/>
+      <ListView 
+          android:id="@+id/contact"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          >
+          
+          
+      </ListView>
+      
+  </LinearLayout>
+    
+

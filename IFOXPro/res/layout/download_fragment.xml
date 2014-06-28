@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:orientation="vertical"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent" 
+    android:background="#dacfcb"
+    >
+     
+    <ScrollView 
+		android:id="@+id/myscroll"	
+		android:layout_width="fill_parent"	
+		android:layout_height="fill_parent">
+		<LinearLayout 
+			android:id="@+id/mylinear"	
+			android:orientation="vertical" 	
+			android:layout_width="fill_parent"	
+			android:layout_height="fill_parent">
+			<ImageView 
+	        android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/p9"/>
+	    <TextView 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="添财是同学自主研发用于电子购物的平台"
+		    android:gravity="center_horizontal"
+		    android:padding="5dip"/>
+	    <View  
+
+       android:layout_width="fill_parent"  
+
+       android:layout_height="1px"
+
+       android:background="?android:attr/listDivider"/>
+	    <ImageView 
+	        android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/p2"
+		/>
+	    <TextView 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="财务管理软件是同学自主研发用于电子购物的平台"
+		    android:gravity="center_horizontal"
+		    android:padding="5dip"/>
+	    <View  
+
+       android:layout_width="fill_parent"  
+
+       android:layout_height="1px"
+
+       android:background="?android:attr/listDivider"/>
+	    <ImageView 
+	        android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/park1"
+		/>
+	    <TextView 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="快停是同学自主研发用于电子购物的平台"
+		    android:gravity="center_horizontal"
+		    android:padding="5dip"/>   
+		    <View  
+
+       android:layout_width="fill_parent"  
+
+       android:layout_height="1px"
+
+       android:background="?android:attr/listDivider"/>
+		</LinearLayout>
+	</ScrollView>
+    
+    
+    </LinearLayout>

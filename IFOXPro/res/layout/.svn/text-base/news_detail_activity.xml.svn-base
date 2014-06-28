@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+  	<LinearLayout
+  	    android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/topcolor1" >
+  	    <ImageView
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:background="@drawable/back_news_text"
+	          android:onClick="back" />
+  	    
+  	    <TextView
+              android:id="@+id/other_login_title"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:layout_weight="1"
+              android:text="@string/news_detail"
+              android:textColor="#fff"
+              android:textSize="20dip" />
+	 
+  	</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/image01">
+	    <android.support.v4.view.ViewPager
+				       android:id="@+id/image_slide_page11"
+				       android:layout_width="fill_parent"
+				       android:layout_height="200dip"
+				       android:focusable="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:padding="8dip">
+	    <TextView 
+	        android:id="@+id/news_detail_title"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:text="【华硕推出廉价版Fonepad 7】"
+	        android:textSize="20dip"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:paddingLeft="8dip">
+	    <TextView 
+	        android:id="@+id/news_detail_title"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:text="2014-04-02"
+	        android:textSize="15dip"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:padding="8dip">
+	    <TextView 
+	        android:id="@+id/news_detail_content"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="华硕今天在台湾发布了廉价版的Fonepad 7，依然是7英寸可通话平板电脑，但在配置上有了明显改变。这款型号为ME175的Fonepad系列中的第一款双卡双待机，支持WCDMA以及GSM网络。硬件配置分别是Intel Atom Z2520 1.2GHz、1G RAM和8G ROM，支持储存卡拓展。。在其他方面，ME175相比之前发布的Fonepad 7除去了前置双喇叭，降低了处理器。但是500万后置摄像头与120万前置摄像头依然保留。ME175定价7990新台币，约合人民币1650元左右。"/>
+    </LinearLayout>
+
+</LinearLayout>

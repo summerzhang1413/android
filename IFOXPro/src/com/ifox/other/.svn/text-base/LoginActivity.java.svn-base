@@ -1,0 +1,83 @@
+package com.ifox.other;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.Window;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ProgressBar;
+import android.widget.TextView;
+
+import com.ifox.main.R;
+
+public class LoginActivity extends Activity {
+	private EditText username, password;
+	private Button login, regiister;
+	private TextView forget_password;
+	private ProgressBar pb_login ;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+		super.setContentView(R.layout.login);
+		
+		intiButton();
+	}
+	private void intiButton() {
+		username = (EditText) findViewById(R.id.other_login_username);		
+		password = (EditText) findViewById(R.id.other_login_password);	
+		login = (Button) findViewById(R.id.other_login_login);
+		regiister = (Button) findViewById(R.id.other_login_register);
+		forget_password = (TextView) findViewById(R.id.forget_password);
+		pb_login = (ProgressBar) findViewById(R.id.pb_login);
+		
+		login.setOnClickListener(new ButtonOnclickListener(0));
+		regiister.setOnClickListener(new ButtonOnclickListener(1));
+		forget_password.setOnClickListener(new TextViewOnClickListener());
+	}
+	
+	public class TextViewOnClickListener implements View.OnClickListener{
+
+		@Override
+		public void onClick(View v) {
+			// TODO Auto-generated method stub
+			
+		}
+		
+		
+	}
+	
+	public class ButtonOnclickListener implements View.OnClickListener{
+		private int index = 0;
+		
+		public ButtonOnclickListener(int i){
+			this.index = i ;
+		}
+		@Override
+		public void onClick(View v) {
+			// TODO Auto-generated method stub
+			switch (index){
+			case 0 :{
+				pb_login.setVisibility(View.VISIBLE);				
+				break;
+			}
+			case 1 :{
+				Intent intent = new Intent(LoginActivity.this,RegisterActivity.class);
+				LoginActivity.this.startActivity(intent);
+				LoginActivity.this.finish();
+				break;
+			}
+			
+			
+			}
+		}
+		
+	}
+	public void back(View v) {
+		finish();
+		overridePendingTransition(0, R.anim.out_news_text);
+	}
+}

@@ -1,0 +1,44 @@
+<resources>
+
+    <string name="app_name">iFOX</string>
+    <string name="title_text">iFOX工作室</string>
+    
+    <!-- 其他区域文字 -->
+    <string name="news_textview">新闻</string>
+    <string name="download_textview">作品</string>
+    <string name="other_textview">其他</string>
+    <string name="login">联系人</string>
+    <string name="register">注册</string>
+    <string name="about">关于</string>
+    <string name="update">检查更新</string>
+    <string name="cancel">发现</string>
+    <string name="news_detail">新闻</string>
+    <string name="other_login_title">登录通行证</string>
+    <string name="hint_username">请输入帐号</string>
+    <string name="hint_password">请输入密码</string>
+    <string name="hint">SSL安全登录</string>
+    <string name="forget_password">忘记密码?</string>
+    
+    <string name="register_username">用户名 &#160;&#160;</string>
+    <string name="register_password">密&#160;&#160;&#160;&#160;码</string>
+    <string name="register_ipassword">确认密码</string>
+    <string name="register_name">姓&#160;&#160;&#160;&#160; 名</string>
+    <string name="register_school">学&#160;&#160;&#160;&#160;校</string>
+    <string name="register_phonenumber">电话号码</string>
+    <string name="register_acm_id">acm_id&#160;&#160;</string>
+    <string name="register_email">电子邮箱</string>
+    <string name="register_indentify">验证码&#160;&#160;</string>
+    <string name="reg_cancel">取消</string>
+     <string name="register_titile">注册信息</string>
+    
+    <!-- 滑动区域文字及链接 -->
+    <string name="title1">快购电子商城</string>
+    <string name="title2">企业门户网站</string>
+    <string name="title3">ifox工作室</string>
+    <string name="title4">添财app</string>
+    <string name="title5">Win8说：请把PC丢出窗外！</string>
+
+    <!-- 下载区域文字 -->
+    <string name="download_button">资料下载！</string>
+    
+</resources>
